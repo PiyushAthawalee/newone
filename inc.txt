@@ -1,0 +1,14 @@
+./cli.c:1:#include <stdio.h>
+./cli.c:2:#include <stdlib.h>
+./cli.c:4:#include <string.h>
+./cli.c:5:#include <unistd.h>
+./cli.c:6:#include <sys/types.h>
+./cli.c:7:#include <sys/socket.h>
+./cli.c:8:#include <netinet/in.h>
+./ser.c:1:#include <stdio.h>
+./ser.c:2:#include <stdlib.h>
+./ser.c:3:#include <string.h>
+./ser.c:4:#include <unistd.h>
+./ser.c:5:#include <sys/types.h>
+./ser.c:6:#include <sys/socket.h>
+./ser.c:7:#include <netinet/in.h>
