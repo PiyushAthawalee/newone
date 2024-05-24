@@ -13,10 +13,17 @@ void error(const char *msg)
 	exit(1);
 }
 int main(int argc ,char *argv[])
+//In C programming, the char* argv[] or char** argv is a common way to define the parameter that represents an array of
+//strings passed to a program when it is executed from the command line.
 {
 	int sockfd ,portno ,n;
 	struct sockaddr_in serv_addr;
+	/*
+In C programming, the line struct sockaddr_in servaddr, clientaddr; declares two variables: servaddr and clientaddr,
+both of which are of type struct sockaddr_in.struct sockaddr_in is a structure used for handling Internet addresses in the C programming language.  
+ */
 	struct  hostent *server;
+	// The hostent structure contains the results of a successful search for the host specified in the name parameter.
 	
 	char buffer[255];
 	if(argc<3){
@@ -26,6 +33,7 @@ int main(int argc ,char *argv[])
 	}
 	portno = atoi(argv[2]);
 	sockfd = socket(AF_INET,SOCK_STREAM,0);
+	//domain -Protocol Family internet domain ,type-tcp ,protocol 0 for tcp 
 	if (sockfd <0)
 		error("error opening socket");
 		
